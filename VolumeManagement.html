@@ -43,6 +43,13 @@
                 </li>
 
                 <li>
+                    <a href="articlelist.html">
+                        <i class="fa-solid fa-file-alt"></i>
+                        All Article List
+                    </a>
+                </li>
+
+                <li>
                     <a href="JournalManagement.html">
                         <i class="fa-solid fa-book"></i>
                         Journal Management
@@ -80,7 +87,7 @@
                 <li>
                     <a href="ArchivesManagement.html">
                         <i class="fa-solid fa-box-archive"></i>
-                        Archives
+                        Archives Management
                     </a>
                 </li>
 
@@ -264,7 +271,8 @@
 
                         <div class="table-controls">
                             <button class="add-btn"><a href="#">Dowmload Excel</a></button>
-                            <button class="add-btn"><a href="#" data-bs-toggle="modal" data-bs-target="#AddVolume">Create
+                            <button class="add-btn"><a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#AddVolume">Create
                                     Volume</a></button>
                         </div>
                         <div class="table-container" style="margin: 0;overflow:visible">
@@ -415,46 +423,44 @@
                             </select>
                         </span>
 
-                        <!-- Volume Number -->
+                        <!-- Select Volume -->
                         <span class="input-set">
-                            <label>Volume Number</label>
-                            <input type="text">
+                            <label>Select Volume</label>
+                            <select class="form-select">
+                                <option selected="">Volume 1 </option>
+                                <option>Volume 2</option>
+                                <option>Volume 4</option>
+                                <option>Volume 5</option>
+                                <option>Volume 6</option>
+                                <option>Volume 7</option>
+                                <option>Volume 8</option>
+                                <option>Volume 9</option>
+                                <option>Volume 10</option>
+                            </select>
                         </span>
 
-                        <!-- Issue Title -->
+                        <!-- Select Year -->
                         <span class="input-set">
-                            <label>Issue</label>
-                            <input type="text">
+                            <label>Select Year</label>
+                            <select class="form-select">
+                                <option selected="">2020 </option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                                <option>2028</option>
+                                <option>2029</option>
+                                <option>2030</option>
+                            </select>
                         </span>
 
-                        <!-- Publication Year -->
+                        <!-- Frequency -->
                         <span class="input-set">
-                            <label>Publication Year</label>
-                            <input type="text">
-                        </span>
-
-                        <!-- Publication Date -->
-                        <span class="input-set">
-                            <label>Publication Date</label>
-                            <input type="date">
-                        </span>
-
-                        <!-- Start Date -->
-                        <span class="input-set">
-                            <label>Start Date</label>
-                            <input type="date">
-                        </span>
-
-                        <!-- End Date -->
-                        <span class="input-set">
-                            <label>End Date</label>
-                            <input type="date">
-                        </span>
-
-                        <!-- DOI -->
-                        <span class="input-set">
-                            <label>DOI</label>
-                            <input type="text">
+                            <label>Frequency</label>
+                            <input type="text" placeholder="e.g., Monthly">
                         </span>
 
                         <!-- Active / Published Status -->
