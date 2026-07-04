@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boostrp 5 css -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+
+    <link rel="stylesheet" href="./css/mainStyle.css" />
+
+    <link rel="stylesheet" href="css/popup&tabs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+    <title>Archives Management</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button id="toggle-btn-small-screen">&#9776;</button>
+                <a href="index.html">
+                    <img src="public/dashboard/logo.png">
+                </a>
+            </div>
+
+            <input type="text" placeholder="Search" class="search-box" />
+
+            <p>Journal Management</p>
+
+            <ul class="nav">
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Dashborad
+                    </a>
+                </li>
+
+                <li>
+                    <a href="JournalManagement.html">
+                        <i class="fa-solid fa-book"></i>
+                        Journal Management
+                    </a>
+                </li>
+
+                <li>
+                    <a href="VolumeManagement.html">
+                        <i class="fa-solid fa-book-open"></i>
+                        Volume Management
+                    </a>
+                </li>
+
+                <li>
+                    <a href="IssuesManagement.html">
+                        <i class="fa-solid fa-newspaper"></i>
+                        Issues Management
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ArticleManagement.html">
+                        <i class="fa-solid fa-file-alt"></i>
+                        Article Management
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ReviewManagement.html">
+                        <i class="fa-solid fa-star"></i>
+                        Review Management
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ArchivesManagement.html">
+                        <i class="fa-solid fa-box-archive"></i>
+                        Archives
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ReportsManagement.html">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        Reports
+                    </a>
+                </li>
+
+            </ul>
+
+            <p>CMS Management</p>
+
+            <ul class="nav">
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-home"></i>
+                        Home Page
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-info-circle"></i>
+                        About Page
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bookmark"></i>
+                        Guidelines Page
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Submit Article Page
+                    </a>
+                </li>
+
+                <li>
+                    <a href="EditorialBoard.html">
+                        <i class="fa-solid fa-users"></i>
+                        Editorial Board
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-address-book"></i>
+                        Contact Page
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bookmark"></i>
+                        Guidelines Page
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Journal Description Page
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="topbar">
+                <span class="toggle_p">
+                    <button id="toggle-btn">&#9776;</button>
+                    <span class="search_icon">
+                        <input type="text" class="search-bar" placeholder="Search..." />
+                        <img src="public/dashboard/search icon.svg">
+                    </span>
+                </span>
+
+                <div class="topbar-right">
+
+                    <div class="user-section">
+                        <span class="user-initial">A</span>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi, Admin
+                        </button>
+                        <ul class="dropdown-menu custom-style-ul">
+
+                            <li><a class="dropdown-item custom-style-li" href="notification.html">Notification</a></li>
+                            <li><a class="dropdown-item custom-style-li" data-bs-toggle="modal"
+                                    data-bs-target="#logoutPopup">Log
+                                    Out</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Archives Statistics  -->
+            <section class="inner_p">
+                <div class="content_top_wrapper">
+                    <div class="p_cards">
+
+                        <div class="heading">
+                            Archives Statistics
+                        </div>
+
+                        <div class="grid_colums_card">
+
+                            <!-- Total Archive -->
+                            <div class="card_d">
+                                <div class="card-content">
+                                    <p>Total Archive</p>
+                                    <h3>42 Issues</h3>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./public/dashboard/d_1.png">
+                                </div>
+                            </div>
+
+                            <!-- Published -->
+                            <div class="card_d">
+                                <div class="card-content">
+                                    <p>Published</p>
+                                    <h3>42 Issues</h3>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./public/dashboard/d_2.png">
+                                </div>
+                            </div>
+
+                            <!-- Total Articles -->
+                            <div class="card_d">
+                                <div class="card-content">
+                                    <p>Total Articles</p>
+                                    <h3>865 Articles</h3>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./public/dashboard/d_2.png">
+                                </div>
+                            </div>
+
+                            <!-- Downloads -->
+                            <div class="card_d">
+                                <div class="card-content">
+                                    <p>Downloads</p>
+                                    <h3>18,425</h3>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./public/dashboard/d_3.png">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Published Issues  -->
+            <section class="inner_p">
+                <div class="content_top_wrapper">
+                    <div class="p_cards">
+
+                        <div class="heading">
+                            Recent Published Issues
+                        </div>
+
+                        <div class="grid_colums_card">
+
+                            <!-- ANUSANDHAN -->
+                            <div>
+                                <div class="card_d">
+                                    <div class="card-content">
+                                        <h3>ANUSANDHAN</h3>
+                                        <br>
+                                        <p>Volume 8 / Issue 2</p>
+                                        <p>Published : 25 Jun 2026</p>
+                                        <p>Articles : 30</p>
+                                        <p>Downloads : 1,285</p>
+                                    </div>
+                                    <div class="img-image">
+                                        <img src="./public/dashboard/latest_1.png">
+                                    </div>
+                                </div>
+                                <div class="card_d mt-3">
+                                    <button class="edit-btn">View Archive</button>
+                                    <button class="edit-btn">Download PDF</button>
+                                    <button class="edit-btn">Export XML</button>
+                                </div>
+                            </div>
+
+
+                            <!-- SHODHAYTAN -->
+                            <div>
+                                <div class="card_d">
+                                    <div class="card-content">
+                                        <h3>SHODHAYTAN</h3>
+                                        <br>
+                                        <p>Volume 7 / Issue 1</p>
+                                        <p>Published : 20 Jun 2026</p>
+                                        <p>Articles : 22</p>
+                                        <p>Downloads : 842</p>
+                                    </div>
+                                    <div class="img-image">
+                                        <img src="./public/dashboard/latest_2.png">
+                                    </div>
+                                </div>
+                                <div class="card_d mt-3">
+                                    <button class="edit-btn">View Archive</button>
+                                    <button class="edit-btn">Download PDF</button>
+                                    <button class="edit-btn">Export XML</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Archive List -->
+            <section class="inner_p">
+                <div class="content_top_wrapper">
+                    <div class="p_cards" style="overflow:visible">
+
+                        <div class="heading">
+                            Archive List
+                        </div>
+
+                        <div class="table-controls">
+                            <button class="add-btn" data-bs-toggle="modal" data-bs-target="#AddArchive">Create
+                                Archive</button>
+                        </div>
+                        <div class="table-container" style="margin: 0;overflow:visible">
+                            <table class="status-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Journal</th>
+                                        <th>Volume</th>
+                                        <th>Issue</th>
+                                        <th>Year</th>
+                                        <th>Publish Date</th>
+                                        <th>Articles</th>
+                                        <th>Downloads</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Anusandhan</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                        <td>2026</td>
+                                        <td>25 Jun 2026</td>
+                                        <td>30</td>
+                                        <td>1,285</td>
+                                        <td>
+
+                                            <div class="dropdown">
+                                                <button class="edit-btn dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Action
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">View Issue</a></li>
+                                                    <li><a class="dropdown-item" href="#">View Articles</a></li>
+                                                    <li><a class="dropdown-item" href="#">Download Issue PDF</a></li>
+                                                    <li><a class="dropdown-item" href="#">Download Complete Issue</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Export XML</a></li>
+                                                    <li><a class="dropdown-item" href="#">View Statistics</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#delete_popup">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>002</td>
+                                        <td>Shodhaytan</td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                        <td>2026</td>
+                                        <td>25 Jun 2026</td>
+                                        <td>30</td>
+                                        <td>986</td>
+                                        <td>
+
+                                            <div class="dropdown">
+                                                <button class="edit-btn dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Action
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#delete_popup">Delete</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+
+<!-- Add Archive -->
+<div class="modal fade" id="AddArchive" tabindex="-1" aria-labelledby="AddArchivelabel" style="display: none;"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="top">
+                    <div class="pop-title">Add Archive</div>
+                </div>
+
+                <div class="middle-3 middle">
+
+                    <!-- Select Journal -->
+                    <span class="input-set">
+                        <label>Select Journal</label>
+                        <select class="form-select">
+                            <option selected="">Anusandhan</option>
+                            <option>Shodhaytan</option>
+                        </select>
+                    </span>
+
+                    <!-- Volume Number -->
+                    <span class="input-set">
+                        <label>Volume Number</label>
+                        <input type="text">
+                    </span>
+
+                    <!-- Issue Title -->
+                    <span class="input-set">
+                        <label>Issue</label>
+                        <input type="text">
+                    </span>
+
+                    <!-- Publication Year -->
+                    <span class="input-set">
+                        <label>Publication Year</label>
+                        <input type="text">
+                    </span>
+
+                    <!-- Publication Date -->
+                    <span class="input-set">
+                        <label>Publication Date</label>
+                        <input type="text">
+                    </span>
+
+                    <!-- Redirect Link -->
+                    <span class="input-set">
+                        <label>Redirect Link</label>
+                        <input type="text">
+                    </span>
+
+
+                    <!-- Active / Inactive Status -->
+                    <span class="input-set">
+                        <label>Status</label>
+                        <select class="form-select">
+                            <option selected="">Active</option>
+                            <option>Inactive</option>
+                        </select>
+                    </span>
+
+                </div>
+
+                <!-- Btn -->
+                <div class="bottom-btn">
+                    <button type="button" class="red" data-bs-dismiss="modal" aria-label="Close"> Cancel </button>
+                    <button type="button" class="blue"> Submit Complaint</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Logout Popup -->
+<div class="modal fade" id="delete_popup" tabindex="-1" aria-labelledby="delete_popupLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="top">
+                    <div class="pop-title-remove">Confirm Delete</div>
+                </div>
+
+                <div class="middle-content">
+                    <span>
+                        Do you really want to Delete? <br>
+                        Make sure your work is saved before leaving.
+                    </span>
+                </div>
+
+                <div class="bottom-btn">
+                    <button type="button" class="red"> Delete </button>
+                    <button type="button" class="blue" data-bs-dismiss="modal" aria-label="Close"> Keep it
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Boostrp 5 js -->
+<script src="js/Boostrap/bootstrap.bundle.js"></script>
+<!-- main js -->
+<script src="js/main.js"></script>
+
+
+</html>

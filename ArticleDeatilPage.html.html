@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Boostrp 5 css -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="./css/sidebar.css" />
+
+  <link rel="stylesheet" href="./css/mainStyle.css" />
+
+  <link rel="stylesheet" href="css/popup&tabs.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Article Details</title>
+</head>
+
+<body>
+  <div class="main-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <button id="toggle-btn-small-screen">&#9776;</button>
+        <a href="index.html">
+          <img src="public/dashboard/logo.png">
+        </a>
+      </div>
+
+      <input type="text" placeholder="Search" class="search-box" />
+
+      <p>Journal Management</p>
+
+      <ul class="nav">
+
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-chart-column"></i>
+            Dashborad
+          </a>
+        </li>
+
+        <li>
+          <a href="articlelist.html">
+            <i class="fa-solid fa-file-alt"></i>
+            All Article List
+          </a>
+        </li>
+
+        <li>
+          <a href="JournalManagement.html">
+            <i class="fa-solid fa-book"></i>
+            Journal Management
+          </a>
+        </li>
+
+        <li>
+          <a href="VolumeManagement.html">
+            <i class="fa-solid fa-book-open"></i>
+            Volume Management
+          </a>
+        </li>
+
+        <li>
+          <a href="IssuesManagement.html">
+            <i class="fa-solid fa-newspaper"></i>
+            Issues Management
+          </a>
+        </li>
+
+        <li>
+          <a href="ArticleManagement.html">
+            <i class="fa-solid fa-file-alt"></i>
+            Article Management
+          </a>
+        </li>
+
+        <li>
+          <a href="ReviewManagement.html">
+            <i class="fa-solid fa-star"></i>
+            Review Management
+          </a>
+        </li>
+
+        <li>
+          <a href="ArchivesManagement.html">
+            <i class="fa-solid fa-box-archive"></i>
+            Archives
+          </a>
+        </li>
+
+        <li>
+          <a href="ReportsManagement.html">
+            <i class="fa-solid fa-chart-bar"></i>
+            Reports
+          </a>
+        </li>
+
+      </ul>
+
+      <p>CMS Management</p>
+
+      <ul class="nav">
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-home"></i>
+            Home Page
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-info-circle"></i>
+            About Page
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-bookmark"></i>
+            Guidelines Page
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-paper-plane"></i>
+            Submit Article Page
+          </a>
+        </li>
+
+        <li>
+          <a href="EditorialBoard.html">
+            <i class="fa-solid fa-users"></i>
+            Editorial Board
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-address-book"></i>
+            Contact Page
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-bookmark"></i>
+            Guidelines Page
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-chart-column"></i>
+            Journal Description Page
+          </a>
+        </li>
+
+      </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Header -->
+      <header class="topbar">
+        <span class="toggle_p">
+          <button id="toggle-btn">&#9776;</button>
+          <span class="search_icon">
+            <input type="text" class="search-bar" placeholder="Search..." />
+            <img src="public/dashboard/search icon.svg">
+          </span>
+        </span>
+
+        <div class="topbar-right">
+
+          <div class="user-section">
+            <span class="user-initial">A</span>
+          </div>
+
+          <div class="dropdown">
+            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hi, Admin
+            </button>
+            <ul class="dropdown-menu custom-style-ul">
+
+              <li><a class="dropdown-item custom-style-li" href="notification.html">Notification</a></li>
+              <li><a class="dropdown-item custom-style-li" href="#">Log Out</a></li>
+            </ul>
+          </div>
+
+
+        </div>
+      </header>
+
+      <!-- Article Review -->
+      <section class="inner_p">
+        <div class="content_top_wrapper">
+          <div class="p_cards">
+
+            <div class="heading">
+              Article Review
+            </div>
+
+            <div class="inner_fp">
+
+              <div class="ssid">ID - RNTUJ001</div>
+
+              <div class="content_container">
+
+                <!-- Name / Title of Article -->
+                <div class="content_inner">
+                  <div class="heading_p">Name / Title of Article </div>
+                  <div class="content_show">Performance Enhancement of Concrete Incorporating Demolition Waste
+                    Aggregates Using PC-200 Superplasticizer</div>
+                </div>
+
+                <!-- Journals -->
+                <div class="content_inner">
+                  <div class="heading_p">Journals</div>
+                  <div class="content_show">Anusandhan</div>
+                </div>
+
+                <!-- Abstract of Article -->
+                <div class="content_inner">
+                  <div class="heading_p">Abstract of Article</div>
+                  <div class="content_show">
+                    The increase in construction work has made a lot of construction and demolition waste that causes
+                    environmental and
+                    disposal problems. One way to deal with the growing amount of demolition concrete waste in a
+                    sustainable way is to use
+                    it again as aggregate in new concrete, but this is usually limited due to lower workability and
+                    damage to mechanical
+                    properties. Solving these problems is important to encourage environmentally friendly and
+                    structurally sound
+                    manufacturing of concrete. The main goal of the study is to use demolition concrete waste as coarse
+                    aggregate in
+                    concrete after studying the possibility and to check how well the PC-200 superplasticizer will work
+                    to improve the
+                    mechanical and fresh properties of concrete made using it. To achieve this goal, concrete samples
+                    were made with
+                    different amounts of replacement of natural coarse aggregate with demolition waste concrete, the
+                    replacement levels
+                    being 0, 25, 50, 75, and 100%. Two categories of mixes were included in this study: ordinary
+                    concrete with a 0.42
+                    water–cement ratio and modified concrete containing PC-200 superplasticizer with low water–cement
+                    ratio of 0.28. The
+                    tests included the slump test, compressive strength, splitting tensile and flexural strength, and
+                    modulus of elasticity
+                    after 28 days of curing. The test results showed reduced workability and mechanical strength of
+                    ordinary concrete mixes
+                    with the introduction of demolition waste aggregates. High levels of modification with PC-200
+                    superplasticizer showed
+                    significant improvement in the fresh and hardened properties. Compressive strength increase from
+                    43.1 MPa for the
+                    reference modified mix to 52.5 MPa for the 100% waste aggregate. Similar improvements were also
+                    observed in the tensile
+                    and flexural strength as well as modulus of elasticity. The results indicate that demolition waste
+                    aggregates can be
+                    successfully used to produce high performance sustainable concrete for structural applications,
+                    given the right level of
+                    modification.
+                  </div>
+                </div>
+
+                <!-- Keyword -->
+                <div class="content_inner">
+                  <div class="heading_p">Keywords</div>
+
+                  <div class="content_partitions">
+
+                    <!-- Keyword 1 -->
+                    <div class="partitions_inner">
+                      <label>Keyword 1</label>
+                      <div class="content_show">diverse sectors</div>
+                    </div>
+
+                    <!-- Keyword 2 -->
+                    <div class="partitions_inner">
+                      <label>Keyword 2</label>
+                      <div class="content_show">contributing</div>
+                    </div>
+
+                    <!-- Keyword 3 -->
+                    <div class="partitions_inner mar_part">
+                      <label>Keyword 3</label>
+                      <div class="content_show">policymaker</div>
+                    </div>
+
+                    <!-- Keyword 4 -->
+                    <div class="partitions_inner mar_part">
+                      <label>Keyword 4</label>
+                      <div class="content_show">researcher</div>
+                    </div>
+
+                    <!-- Keyword 5 -->
+                    <div class="partitions_inner mar_part">
+                      <label>Keyword 5</label>
+                      <div class="content_show">collaboration</div>
+                    </div>
+
+                    <!-- Keyword 6 -->
+                    <div class="partitions_inner mar_part">
+                      <label>Keyword 6</label>
+                      <div class="content_show">innovation</div>
+                    </div>
+
+                    <!-- Keyword 7 -->
+                    <div class="partitions_inner mar_part">
+                      <label>Keyword 7</label>
+                      <div class="content_show">sustainable growth</div>
+                    </div>
+
+                    <!-- Keyword 8 -->
+                    <div class="partitions_inner mar_part">
+                      <label>Keyword 8</label>
+                      <div class="content_show">learning</div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+                <!-- Detail of Author -->
+                <div class="content_inner">
+                  <div class="heading_p">Detail of Author</div>
+
+                  <div class="content_partitions">
+
+                    <!-- Author / PI Full Name -->
+                    <div class="partitions_inner">
+                      <label>Author / PI Full Name</label>
+                      <div class="content_show">Mr. Rajat Sahay Pradhan</div>
+                    </div>
+
+                    <!-- Mobile No. -->
+                    <div class="partitions_inner">
+                      <label>Mobile No.</label>
+                      <div class="content_show">917024393158</div>
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="partitions_inner">
+                      <label>Email Address</label>
+                      <div class="content_show">prajat917@gmail.com</div>
+                    </div>
+
+                    <!-- Affiliating Institute -->
+                    <div class="partitions_inner mar_part">
+                      <label>Affiliating Institute</label>
+                      <div class="content_show">RNTU University</div>
+                    </div>
+
+                    <!-- Department -->
+                    <div class="partitions_inner mar_part">
+                      <label>Department</label>
+                      <div class="content_show">Science</div>
+                    </div>
+
+                    <!-- ORCID ID -->
+                    <div class="partitions_inner mar_part">
+                      <label>ORCID ID</label>
+                      <div class="content_show">454545454</div>
+                    </div>
+
+                  </div>
+
+                  <!-- Enter Affiliating Institute Address -->
+                  <div class="content_inner" style="margin: 0;">
+                    <label>Enter Affiliating Institute Address</label>
+                    <div class="content_show">Anandnagar, Bhopal, Madhya Pradesh 462021</div>
+                  </div>
+
+                </div>
+
+                <!-- Detail of Co-Author -->
+                <div class="content_inner">
+                  <div class="heading_p">Detail of Co-Author</div>
+
+                  <div class="content_partitions">
+
+                    <!-- Name of Co Author -->
+                    <div class="partitions_inner">
+                      <label>Name of Co Author</label>
+                      <div class="content_show">Mr. Rajat Sahay Pradhan</div>
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="partitions_inner">
+                      <label>Email Address</label>
+                      <div class="content_show">prajat@gmail.com</div>
+                    </div>
+
+                    <!-- Affiliating Institute -->
+                    <div class="partitions_inner mar_part">
+                      <label>Affiliating Institute</label>
+                      <div class="content_show">RNTU University</div>
+                    </div>
+
+                    <!-- ORCID ID -->
+                    <div class="partitions_inner mar_part">
+                      <label>ORCID ID</label>
+                      <div class="content_show">454545454</div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+                <!-- Recommended Reviewers -->
+                <div class="content_inner">
+                  <div class="heading_p">Recommended Reviewers</div>
+
+                  <div class="content_partitions">
+
+                    <!-- Name of Recommended Reviewer -->
+                    <div class="partitions_inner">
+                      <label>Name of Reviewer</label>
+                      <div class="content_show">Mr. Rajat Sahay Pradhan</div>
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="partitions_inner">
+                      <label>Email Address</label>
+                      <div class="content_show">prajat@gmail.com</div>
+                    </div>
+
+                    <!-- Affiliating Institute -->
+                    <div class="partitions_inner mar_part">
+                      <label>Affiliating Institute</label>
+                      <div class="content_show">RNTU University</div>
+                    </div>
+
+                    <!-- Area of Expertise -->
+                    <div class="partitions_inner mar_part">
+                      <label>Area of Expertise</label>
+                      <div class="content_show">AI , Robot , Machine learning</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <!-- Corresponding Author Signature -->
+                <div class="content_inner">
+                  <div class="heading_p">Corresponding Author Signature</div>
+
+                  <div class="content_partitions">
+
+                    <!-- Name of Corresponding Author -->
+                    <div class="partitions_inner">
+                      <label>Name of Corresponding Author</label>
+                      <div class="content_show">Mr. Rajat Sahay Pradhan</div>
+                    </div>
+
+                    <!-- Signature -->
+                    <div class="partitions_inner">
+                      <label>Signature</label>
+                      <div class="content_show"><img src="public/dashboard/logo.png" style="width: 60px;"></div>
+                    </div>
+
+                    <!-- Date -->
+                    <div class="partitions_inner mar_part">
+                      <label>Date</label>
+                      <div class="content_show">06/05/2001</div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <!-- University Opted for Presentation -->
+                <div class="content_inner">
+                  <div class="heading_p">University Opted for Presentation</div>
+                  <div class="content_show">ASIECT University</div>
+                </div>
+
+                <!-- Download Full Article Paper PDF-->
+                <div class="content_inner">
+                  <div class="heading_p">Download Full Article Paper PDF</div>
+                  <div class="paper_dowmload">
+                    <div class="content_show">Innovating for Tomorrow: Advancing Research, Technology, and Sustainable
+                      Development.pdf</div>
+                    <div class="button_d"><button>Download Paper</button></div>
+                  </div>
+                </div>
+
+                <!-- Download Full Article Paper PDF-->
+                <div class="content_inner">
+                  <div class="heading_p">Download Full Article Paper Doc</div>
+                  <div class="paper_dowmload">
+                    <div class="content_show">Innovating for Tomorrow: Advancing Research, Technology, and Sustainable
+                      Development.pdf</div>
+                    <div class="button_d"><button>Download Paper</button></div>
+                  </div>
+                </div>
+
+                <section class="term_con">
+
+                  <!-- Send to Reviewers -->
+                  <div class="button_d"><button data-bs-toggle="modal" data-bs-target="#SendNotification">Send
+                      to Reviewers</button></div>
+
+                  <!-- Approve Abstract -->
+                  <div class="button_d"><button class="green_d" data-bs-toggle="modal"
+                      data-bs-target="#ApproveAbstract">Approve
+                      Full Paper</button></div>
+
+                  <!-- Reject Abstract -->
+                  <div class="button_d"><button class="red_d" data-bs-toggle="modal"
+                      data-bs-target="#RejectAbstract">Reject
+                      Full Paper</button></div>
+
+                </section>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Notification -->
+      <div class="modal fade" id="SendNotification" tabindex="-1" aria-labelledby="SendNotificationLabel"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+              <div class="top">
+                <div class="pop-title">Send to Reviewers</div>
+              </div>
+
+              <div class="middle">
+
+                <span class="input-set">
+                  <label>ID</label>
+                  <input type="text" placeholder="RNTUJ001" disabled>
+                </span>
+
+                <span class="input-set">
+                  <label>Select Reviewer</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected="">Select Reviewer</option>
+                    <option>Dr. John Doe</option>
+                    <option>Dr. Jane Smith</option>
+                    <option>Dr. Robert Johnson</option>
+                  </select>
+                </span>
+
+                <span class="input-set">
+                  <label>Assignment Date</label>
+                  <input type="date">
+                </span>
+
+                <span class="input-set">
+                  <label>Due Date</label>
+                  <input type="date">
+                </span>
+
+                <span class="input-set">
+                  <label>Select Priority</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected="">Select Priority</option>
+                    <option>High</option>
+                    <option>Medium</option>
+                    <option>Low</option>
+                  </select>
+                </span>
+
+              </div>
+
+              <div class="reason">
+                <label>Write Message</label>
+                <textarea type="text" placeholder="Last date to submit your abstract: 30th Sept 2025"></textarea>
+              </div>
+
+              <div class="bottom-btn">
+                <button type="button" class="blue" data-bs-dismiss="modal" aria-label="Close"> Cancel </button>
+                <button type="button" class="green"> Send</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Approve Full Paper Popup -->
+      <div class="modal fade" id="ApproveAbstract" tabindex="-1" aria-labelledby="ApproveAbstractLabel"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+              <div class="top">
+                <div class="pop-title">Approve Full Paper</div>
+              </div>
+
+              <div class="middle"></div>
+
+              <div class="full-width-i">
+                <span class="input-set">
+                  <label>
+                    <p class="big_b">Do you want to approve this submission?</p>
+                  </label>
+                </span>
+              </div>
+
+              <div class="full-width-i">
+                <span class="input-set">
+                  <label>Optional Message to Author</label>
+                  <textarea name="" id="" placeholder="Enter"></textarea>
+                </span>
+              </div>
+
+              <div class="bottom-btn">
+                <button type="button" class="blue" data-bs-dismiss="modal" aria-label="Close"> Cancel
+                </button>
+                <button type="button" class="green"> Confirm Approve
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Reject Full Paper Popup -->
+      <div class="modal fade" id="RejectAbstract" tabindex="-1" aria-labelledby="RejectAbstractLabel"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+              <div class="top">
+                <div class="pop-title">Reject Full Paper</div>
+              </div>
+
+              <div class="middle"></div>
+
+              <div class="full-width-i">
+                <span class="input-set">
+                  <label>
+                    <p class="big_b" style="color: #D32F2F;">Are you sure you want to reject this submission?</p>
+                  </label>
+                </span>
+              </div>
+
+              <div class="full-width-i">
+                <span class="input-set">
+                  <label>Please provide a reason for rejection:</label>
+                  <textarea name="" id="" placeholder="Enter"></textarea>
+                </span>
+              </div>
+
+              <div class="bottom-btn">
+                <button type="button" class="blue" data-bs-dismiss="modal" aria-label="Close"> Cancel
+                </button>
+                <button type="button" class="red"> Confirm Reject
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Boostrp 5 js -->
+  <script src="js/Boostrap/bootstrap.bundle.js"></script>
+  <!-- main js -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

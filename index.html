@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Boostrp 5 css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="./css/sidebar.css" />
+  <link rel="stylesheet" href="./css/mainStyle.css" />
+  <link rel="stylesheet" href="css/popup&tabs.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/table.css">
+  <title>RNTU Journal Admin Panel</title>
+
+</head>
+
+
+<body>
+  <div class="main-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <button id="toggle-btn-small-screen">&#9776;</button>
+        <a href="index.html">
+          <img src="public/dashboard/logo.png">
+        </a>
+      </div>
+
+      <input type="text" placeholder="Search" class="search-box" />
+
+      <p>Journal Management</p>
+
+      <ul class="nav">
+
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-chart-column"></i>
+            Dashborad
+          </a>
+        </li>
+
+        <li>
+          <a href="articlelist.html">
+            <i class="fa-solid fa-file-alt"></i>
+            All Article List
+          </a>
+        </li>
+
+        <li>
+          <a href="JournalManagement.html">
+            <i class="fa-solid fa-book"></i>
+            Journal Management
+          </a>
+        </li>
+
+        <li>
+          <a href="VolumeManagement.html">
+            <i class="fa-solid fa-book-open"></i>
+            Volume Management
+          </a>
+        </li>
+
+        <li>
+          <a href="IssuesManagement.html">
+            <i class="fa-solid fa-newspaper"></i>
+            Issues Management
+          </a>
+        </li>
+
+        <li>
+          <a href="ArticleManagement.html">
+            <i class="fa-solid fa-file-alt"></i>
+            Article Management
+          </a>
+        </li>
+
+        <li>
+          <a href="ReviewManagement.html">
+            <i class="fa-solid fa-star"></i>
+            Review Management
+          </a>
+        </li>
+
+        <li>
+          <a href="ArchivesManagement.html">
+            <i class="fa-solid fa-box-archive"></i>
+            Archives
+          </a>
+        </li>
+
+        <li>
+          <a href="ReportsManagement.html">
+            <i class="fa-solid fa-chart-bar"></i>
+            Reports
+          </a>
+        </li>
+
+      </ul>
+
+      <p>CMS Management</p>
+
+      <ul class="nav">
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-home"></i>
+            Home Page
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-info-circle"></i>
+            About Page
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-bookmark"></i>
+            Guidelines Page
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-paper-plane"></i>
+            Submit Article Page
+          </a>
+        </li>
+
+        <li>
+          <a href="EditorialBoard.html">
+            <i class="fa-solid fa-users"></i>
+            Editorial Board
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-address-book"></i>
+            Contact Page
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-bookmark"></i>
+            Guidelines Page
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-chart-column"></i>
+            Journal Description Page
+          </a>
+        </li>
+
+      </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Header -->
+      <header class="topbar">
+        <span class="toggle_p">
+          <button id="toggle-btn">&#9776;</button>
+          <span class="search_icon">
+            <input type="text" class="search-bar" placeholder="Search..." />
+            <img src="public/dashboard/search icon.svg">
+          </span>
+        </span>
+
+        <div class="topbar-right">
+
+          <div class="user-section">
+            <span class="user-initial">A</span>
+          </div>
+
+          <div class="dropdown">
+            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hi, Admin
+            </button>
+            <ul class="dropdown-menu custom-style-ul">
+
+              <li><a class="dropdown-item custom-style-li" href="notification.html">Notification</a></li>
+              <li><a class="dropdown-item custom-style-li" data-bs-toggle="modal" data-bs-target="#logoutPopup">Log
+                  Out</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </header>
+
+      <!-- Overview of total Jornals submitted -->
+      <section class="inner_p">
+        <div class="content_top_wrapper">
+          <div class="p_cards">
+
+            <div class="heading">
+              Overview of total Jornals submitted
+            </div>
+
+            <div class="grid_colums_card">
+
+              <!-- Journals -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>Total Journals</p>
+                  <h3>2 Journals</h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/d_1.png">
+                </div>
+              </div>
+
+              <!-- Total Articles -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>Total Articles</p>
+                  <h3>465 </h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/d_2.png">
+                </div>
+              </div>
+
+              <!-- Submitted Articles -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>Submitted Articles</p>
+                  <h3>42</h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/d_3.png">
+                </div>
+              </div>
+
+              <!-- Under Review -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>Under Review</p>
+                  <h3>18</h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/d_4.png">
+                </div>
+              </div>
+
+              <!-- Pending Submission -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>Pending Submission</p>
+                  <h3>55</h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/d_4.png">
+                </div>
+              </div>
+
+              <!-- Revision Requested -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>Revision Requested</p>
+                  <h3>22</h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/d_4.png">
+                </div>
+              </div>
+
+              <!-- Accepted -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>Accepted Articles</p>
+                  <h3>12</h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/accept.png">
+                </div>
+              </div>
+
+              <!-- Rejected -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>Rejected Articles</p>
+                  <h3>5</h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/min.png">
+                </div>
+              </div>
+
+              <!-- Published -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>Published Articles</p>
+                  <h3>340</h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/upload.png">
+                </div>
+              </div>
+
+              <!-- APC Revenue -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>APC Revenue</p>
+                  <h3>₹4,80,000</h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/rupee.png">
+                </div>
+              </div>
+
+              <!-- Pending Payments -->
+              <div class="card_d">
+                <div class="card-content">
+                  <p>Pending Payments</p>
+                  <h3>₹1,80,000</h3>
+                </div>
+                <div class="card-image">
+                  <img src="./public/dashboard/rupee.png">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="row">
+        <div class="col-6">
+
+          <!-- Monthly Article Submission -->
+          <section class="inner_p">
+            <div class="content_top_wrapper">
+
+              <div class="p_cards">
+
+                <div class="heading">
+                  Monthly Article Submission
+                </div>
+
+                <div class="table-controls">
+                  <button class="add-btn"><a href="">Dowmload Excel</a></button>
+                </div>
+
+                <div class="card_d">
+
+                  <div class="chart-card">
+                    <canvas id="submissionChart"></canvas>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="col-6">
+
+          <!-- Monthly Published Articles -->
+          <section class="inner_p">
+            <div class="content_top_wrapper">
+              <div class="p_cards">
+
+                <div class="heading">
+                  Monthly Published Articles
+                </div>
+
+                <div class="table-controls">
+                  <button class="add-btn"><a href="">Dowmload Excel</a></button>
+                </div>
+
+                <div class="card_d">
+
+                  <div class="chart-card">
+                    <canvas id="publishedChart"></canvas>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="col-6">
+
+          <!-- Monthly APC Revenue -->
+          <section class="inner_p">
+            <div class="content_top_wrapper">
+              <div class="p_cards">
+
+                <div class="heading">
+                  Monthly APC Revenue
+                </div>
+
+                <div class="table-controls">
+                  <button class="add-btn"><a href="">Dowmload Excel</a></button>
+                </div>
+
+                <div class="card_d">
+
+                  <div class="chart-card">
+                    <canvas id="revenueChart"></canvas>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="col-6">
+
+          <!-- Submission Status -->
+          <section class="inner_p">
+            <div class="content_top_wrapper">
+              <div class="p_cards">
+
+                <div class="heading">
+                  Submission Status
+                </div>
+
+                <div class="table-controls">
+                  <button class="add-btn"><a href="">Dowmload Excel</a></button>
+                </div>
+
+                <div class="card_d">
+
+                  <div class="chart-card">
+                    <canvas id="statusChart"></canvas>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="col-6">
+
+          <!-- Journal Distribution -->
+          <section class="inner_p">
+            <div class="content_top_wrapper">
+              <div class="p_cards">
+
+                <div class="heading">
+                  Journal Distribution
+                </div>
+
+                <div class="table-controls">
+                  <button class="add-btn"><a href="">Dowmload Excel</a></button>
+                </div>
+
+                <div class="card_d">
+
+                  <div class="chart-card">
+                    <canvas id="journalChart"></canvas>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="col-6">
+
+          <!-- Reviewer Performance -->
+          <section class="inner_p">
+            <div class="content_top_wrapper">
+              <div class="p_cards">
+
+                <div class="heading">
+                  Reviewer Performance
+                </div>
+
+                <div class="table-controls">
+                  <button class="add-btn"><a href="">Dowmload Excel</a></button>
+                </div>
+
+                <div class="card_d">
+
+                  <div class="chart-card">
+                    <canvas id="reviewChart"></canvas>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="col-12">
+
+          <!-- Article Downloads -->
+          <section class="inner_p">
+            <div class="content_top_wrapper">
+              <div class="p_cards">
+
+                <div class="heading">
+                  Article Downloads
+                </div>
+
+                <div class="table-controls">
+                  <button class="add-btn"><a href="">Dowmload Excel</a></button>
+                </div>
+
+                <div class="card_d">
+
+                  <div class="chart-card">
+                    <canvas id="downloadChart"></canvas>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+      </div>
+
+      <!-- Recent Submitted Articles -->
+      <section class="inner_p">
+        <div class="content_top_wrapper">
+          <div class="p_cards">
+
+            <div class="heading">
+              Recent Submitted Articles
+            </div>
+
+            <div class="table-controls">
+              <button class="add-btn"><a href="">Dowmload Excel</a></button>
+              <button class="add-btn"><a href="abstractlist.html">View All</a></button>
+            </div>
+            <div class="table-container" style="margin: 0;">
+              <table class="status-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Journal</th>
+                    <th>Manuscript Title</th>
+                    <th>First Author</th>
+                    <th>Submitted</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>ART001</td>
+                    <td>Anusandhan</td>
+                    <td>AI in Agriculture</td>
+                    <td>Dr. Amit Sharma</td>
+                    <td>25 Jun 2026</td>
+                    <td style="color: gold; font-weight: bold;">Initial Screening</td>
+                    <td>
+                      <button class="edit-btn"><a href="abstractpaper.html">View</a></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>ART002</td>
+                    <td>Shodhaytan</td>
+                    <td>AI in Agriculture</td>
+                    <td>Dr. Amit Sharma</td>
+                    <td>25 Jun 2026</td>
+                    <td style="color: gold; font-weight: bold;">Under Review</td>
+                    <td>
+                      <button class="edit-btn"><a href="abstractpaper.html">Review</a></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>ART003</td>
+                    <td>Shodhaytan</td>
+                    <td>AI in Agriculture</td>
+                    <td>Dr. Amit Sharma</td>
+                    <td>25 Jun 2026</td>
+                    <td style="color: gold; font-weight: bold;">Revision Requested</td>
+                    <td>
+                      <button class="edit-btn"><a href="abstractpaper.html">Edit</a></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>ART004</td>
+                    <td>Anusandhan</td>
+                    <td>AI in Agriculture</td>
+                    <td>Dr. Amit Sharma</td>
+                    <td>25 Jun 2026</td>
+                    <td style="color: green; font-weight: bold;">Accepted</td>
+                    <td>
+                      <button class="edit-btn"><a href="abstractpaper.html">Publish</a></button>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Pending Reviews -->
+      <section class="inner_p">
+        <div class="content_top_wrapper">
+          <div class="p_cards">
+
+            <div class="heading">
+              Pending Reviews
+            </div>
+
+            <div class="table-controls">
+              <button class="add-btn"><a href="">Dowmload Excel</a></button>
+              <button class="add-btn"><a href="abstractlist.html">View All</a></button>
+            </div>
+            <div class="table-container" style="margin: 0;">
+              <table class="status-table">
+                <thead>
+                  <tr>
+                    <th>Reviewer</th>
+                    <th>Journal</th>
+                    <th>Article</th>
+                    <th>Due Date</th>
+                    <th>Days Left</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>Dr. Sharma</td>
+                    <td>Anusandhan</td>
+                    <td>AI Agriculture</td>
+                    <td>30 Jun</td>
+                    <td>5</td>
+                    <td style="color: gold; font-weight: bold;">Pending</td>
+                    <td>
+                      <button class="edit-btn"><a href="abstractpaper.html">View</a></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Prof. Gupta</td>
+                    <td>Shodhaytan</td>
+                    <td>Renewable Energy</td>
+                    <td>28 Jun</td>
+                    <td>4</td>
+                    <td style="color: gold; font-weight: bold;">In Progress</td>
+                    <td>
+                      <button class="edit-btn"><a href="abstractpaper.html">Review</a></button>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Publications -->
+      <section class="inner_p">
+        <div class="content_top_wrapper">
+          <div class="p_cards">
+
+            <div class="heading">
+              Latest Publications
+            </div>
+
+            <div class="table-controls">
+              <button class="add-btn"><a href="">Dowmload Excel</a></button>
+              <button class="add-btn"><a href="abstractlist.html">View All</a></button>
+            </div>
+            <div class="table-container" style="margin: 0;">
+              <table class="status-table">
+                <thead>
+                  <tr>
+                    <th>DOI</th>
+                    <th>Article</th>
+                    <th>Journal</th>
+                    <th>Volume</th>
+                    <th>Issue</th>
+                    <th>Published Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td><a href="#">10.54392/rntu001</a></td>
+                    <td>AI Agriculture</td>
+                    <td>Anusandhan</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>25 Jun 2026</td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="#">10.54392/rntu001</a></td>
+                    <td>Renewable Energy</td>
+                    <td>Shodhaytan</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>20 Jun 2026</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- APC Payment -->
+      <section class="inner_p">
+        <div class="content_top_wrapper">
+          <div class="p_cards">
+
+            <div class="heading">
+              APC Payment
+            </div>
+
+            <div class="table-controls">
+              <button class="add-btn"><a href="">Dowmload Excel</a></button>
+              <button class="add-btn"><a href="abstractlist.html">View All</a></button>
+            </div>
+            <div class="table-container" style="margin: 0;">
+              <table class="status-table">
+                <thead>
+                  <tr>
+                    <th>Invoice</th>
+                    <th>Author</th>
+                    <th>Journal</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Payment Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>INV-101</td>
+                    <td>Amit Sharma</td>
+                    <td>Anusandhan</td>
+                    <td>₹5000</td>
+                    <td>24 Jun</td>
+                    <td style="color: green; font-weight: bold;">Paid</td>
+                  </tr>
+
+                  <tr>
+                    <td>INV-102</td>
+                    <td>Neha Patel</td>
+                    <td>Shodhaytan</td>
+                    <td>₹5000</td>
+                    <td>25 Jun</td>
+                    <td style="color: gold; font-weight: bold;">Pending</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Notifications -->
+      <section class="inner_p">
+        <div class="content_top_wrapper">
+          <div class="p_cards">
+
+            <div class="heading">
+              Recent Notifications
+            </div>
+
+            <div class="table-controls">
+              <button class="add-btn"><a href="">Dowmload Excel</a></button>
+              <button class="add-btn"><a href="abstractlist.html">View All</a></button>
+            </div>
+            <div class="table-container" style="margin: 0;">
+              <table class="status-table">
+                <thead>
+                  <tr>
+                    <th>Sr.no</th>
+                    <th>Notification</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>1</td>
+                    <td>New Article Submitted</td>
+                  </tr>
+
+                  <tr>
+                    <td>2</td>
+                    <td>Reviewer Accepted Assignment</td>
+                  </tr>
+
+                  <tr>
+                    <td>3</td>
+                    <td>APC Payment Received</td>
+                  </tr>
+
+                  <tr>
+                    <td>4</td>
+                    <td>Article Published Successfully</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Logout Popup -->
+      <div class="modal fade" id="logoutPopup" tabindex="-1" aria-labelledby="logoutPopupLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+              <div class="top">
+                <div class="pop-title-remove">Confirm Logout</div>
+              </div>
+
+              <div class="middle-content">
+                <span>
+                  Do you really want to log out? <br>
+                  Make sure your work is saved before leaving.
+                </span>
+              </div>
+
+              <div class="bottom-btn">
+                <button type="button" class="red"> Logout </button>
+                <button type="button" class="blue" data-bs-dismiss="modal" aria-label="Close"> Stay Logged In </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Drop Down -->
+  <script>
+    document.querySelectorAll(".dropdown-btn").forEach(button => {
+      button.addEventListener("click", function () {
+
+        const parent = this.parentElement;
+
+        document.querySelectorAll(".dropdown-menu-item").forEach(item => {
+          if (item !== parent) {
+            item.classList.remove("active");
+          }
+        });
+
+        parent.classList.toggle("active");
+      });
+    });
+  </script>
+
+  <!-- Chart -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Article Downloads -->
+  <script>
+    new Chart(document.getElementById('downloadChart'), {
+
+      type: 'bar',
+
+      data: {
+
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+
+        datasets: [{
+
+          data: [150, 280, 190, 220, 340, 280],
+
+          backgroundColor: [
+            '#E8EDF3',
+            '#E8EDF3',
+            '#E8EDF3',
+            '#E8EDF3',
+            '#003A65',
+            '#E8EDF3'
+          ],
+
+          borderRadius: 8,
+
+          borderSkipped: false,
+
+          barThickness: 16
+
+        }]
+
+      },
+
+      options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false,
+
+        plugins: { legend: { display: false } },
+
+        scales: {
+
+          x: { grid: { display: false } },
+
+          y: {
+            beginAtZero: true,
+            grid: { color: '#E5E5E5' }
+          }
+
+        }
+
+      }
+
+    });
+  </script>
+
+  <!-- Reviewer Performance -->
+  <script>
+    new Chart(document.getElementById('reviewChart'), {
+
+      type: 'bar',
+
+      data: {
+
+        labels: [
+          'Dr A',
+          'Dr B',
+          'Dr C',
+          'Dr D',
+          'Dr E'
+        ],
+
+        datasets: [{
+
+          data: [
+            22,
+            18,
+            28,
+            15,
+            20
+          ],
+
+          backgroundColor: [
+            '#E8EDF3',
+            '#003A65',
+            '#E8EDF3',
+            '#E8EDF3',
+            '#E8EDF3'
+          ],
+
+          borderRadius: 8,
+
+          barThickness: 14
+
+        }]
+
+      },
+
+      options: {
+
+        indexAxis: 'y',
+
+        responsive: true,
+
+        plugins: {
+          legend: { display: false }
+        },
+
+        scales: {
+
+          x: {
+            grid: { color: '#E5E5E5' }
+          },
+
+          y: {
+            grid: { display: false }
+          }
+
+        }
+
+      }
+
+    });
+  </script>
+
+  <!-- Journal Distribution -->
+  <script>
+    new Chart(document.getElementById('journalChart'), {
+
+      type: 'pie',
+
+      data: {
+
+        labels: [
+          'Anusandhan',
+          'Shodhaytan'
+        ],
+
+        datasets: [{
+
+          data: [
+            58,
+            42
+          ],
+
+          backgroundColor: [
+            '#003A65',
+            '#D9E2EC'
+          ]
+
+        }]
+
+      },
+
+      options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false,
+
+        plugins: {
+
+          legend: {
+            position: 'bottom'
+          }
+
+        }
+
+      }
+
+    });
+  </script>
+
+  <!-- Submission Status -->
+  <script>
+    new Chart(document.getElementById('statusChart'), {
+
+      type: 'doughnut',
+
+      data: {
+
+        labels: [
+          'Submitted',
+          'Review',
+          'Accepted',
+          'Rejected'
+        ],
+
+        datasets: [{
+
+          data: [40, 22, 18, 8],
+
+          backgroundColor: [
+
+            '#003A65',
+            '#4CAF50',
+            '#FFC107',
+            '#F44336'
+
+          ],
+
+          borderWidth: 0
+
+        }]
+
+      },
+
+      options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false,
+
+        cutout: '72%',
+
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+
+      }
+
+    });
+  </script>
+
+  <!-- APC Revenue -->
+  <script>
+    new Chart(document.getElementById('revenueChart'), {
+
+      type: 'line',
+
+      data: {
+
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+
+        datasets: [{
+
+          data: [20000, 25000, 28000, 32000, 45000, 50000],
+
+          borderColor: '#003A65',
+
+          backgroundColor: 'rgba(0,58,101,.10)',
+
+          fill: true,
+
+          tension: .4,
+
+          pointBackgroundColor: '#003A65',
+
+          pointRadius: 5
+
+        }]
+
+      },
+
+      options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false,
+
+        plugins: { legend: { display: false } },
+
+        scales: {
+
+          x: { grid: { display: false } },
+
+          y: {
+            grid: { color: '#E5E5E5' }
+          }
+
+        }
+
+      }
+
+    });
+  </script>
+
+  <!-- Published Articles -->
+  <script>
+    new Chart(document.getElementById('publishedChart'), {
+
+      type: 'bar',
+
+      data: {
+
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+
+        datasets: [{
+
+          data: [8, 12, 18, 16, 22, 20],
+
+          backgroundColor: [
+            '#E8EDF3',
+            '#E8EDF3',
+            '#E8EDF3',
+            '#003A65',
+            '#E8EDF3',
+            '#E8EDF3'
+          ],
+
+          borderRadius: 8,
+          borderSkipped: false,
+          barThickness: 16
+
+        }]
+
+      },
+
+      options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false,
+
+        plugins: { legend: { display: false } },
+
+        scales: {
+          x: { grid: { display: false } },
+          y: {
+            beginAtZero: true,
+            max: 25,
+            ticks: { stepSize: 5 },
+            grid: { color: '#E5E5E5' }
+          }
+        }
+
+      }
+
+    });
+  </script>
+
+  <!-- Monthly Article Submission -->
+  <script>
+    new Chart(document.getElementById('submissionChart'), {
+
+      type: 'bar',
+
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+
+        datasets: [{
+
+          data: [18, 25, 16, 21, 30, 26],
+
+          backgroundColor: [
+            '#E8EDF3',
+            '#E8EDF3',
+            '#E8EDF3',
+            '#E8EDF3',
+            '#003A65',
+            '#E8EDF3'
+          ],
+
+          borderRadius: 8,
+          borderSkipped: false,
+          barThickness: 16
+
+        }]
+      },
+
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+
+        plugins: {
+          legend: { display: false }
+        },
+
+        scales: {
+          x: {
+            grid: { display: false }
+          },
+          y: {
+            beginAtZero: true,
+            max: 35,
+            ticks: { stepSize: 5 },
+            grid: { color: '#E5E5E5' }
+          }
+        }
+
+      }
+
+    });
+  </script>
+
+  <!-- Boostrp 5 js -->
+  <script src="js/Boostrap/bootstrap.bundle.js"></script>
+  <!-- main js -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
